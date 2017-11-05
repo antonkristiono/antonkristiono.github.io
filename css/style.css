@@ -2,11 +2,6 @@ html {
 	position: relative;
 }
 
-body {
-	margin-bottom: 100px;
-	margin-top: 30px;
-}
-
 .jumbotron {
 	height: 400px;
 	background-image: url('../img/bg.jpg');
@@ -20,49 +15,36 @@ body {
 .jumbotron img {
 	width: 175px;
 	border: 5px solid #eaeaea;
+	margin-bottom: 38px;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
-.jumbotron h1, .jumbotron p {
+.jumbotron h1, .jumbotron h5 {
 	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
 section {
-	min-height: 250px;
+	min-height: 220px;
 }
 
-.pKiri, .pKanan {
+.pTengah {
 	opacity: 0;
-	transform: translate(-50px,0) rotate(15deg);
+	transform: translate(0,-50px) rotate(0);
 	transition: 1s;
 }
 
-.pKanan {
-	transform: translate(50px,0) rotate(-15deg);
-}
 
-.pKiri.pMuncul, .pKanan.pMuncul {
+.pTengah.pMuncul {
 	opacity: 1;
 	transform: translate(0,0);
 }
 
-.portfolio {
-	background-color: #eee;
-}
 
-.portfolio .thumbnail {
-	opacity: 0;
-	transform: translate(0, -40px);
-	transition: .5s;
-}
-
-.portfolio .thumbnail.muncul{
-	opacity: 1;
-	transform: translate(0,0);
-}
 
 .contact {
 	min-height: 250px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 footer {
@@ -76,4 +58,8 @@ footer {
 footer p {
 	color: #aaa;
 	font-size: 0.9em;
+}
+
+.kotakfolio {
+	font-size: 13px;
 }
